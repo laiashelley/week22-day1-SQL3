@@ -1,0 +1,13 @@
+-- Muestra los empleados seguidos del 1 al 18
+
+SELECT * FROM `empleados`
+ORDER BY `nDIEmp`
+LIMIT 18;
+
+-- Muestra los empleados 24, 25, 27, 28 i 31
+
+SELECT `nDIEmp` 
+FROM `empleados`;
+
+SELECT * FROM `empleados`
+WHERE `nDIEmp` IN ('1.130.222', '1.130.333', '1.130.444', '1.130.555', '1.130.666');
